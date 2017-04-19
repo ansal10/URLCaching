@@ -31,7 +31,8 @@
     self.endTime.text = @"0";
     self.timeTaken.text = @"X";
     self.contentLength.text = @"0";
-    NSString *urlStr = @"http://github.com/rs/SDURLCache/blob/master/SDURLCache.m";
+    // Just some chunk data to add content length to file
+    NSString *urlStr = @"https://github.com/ansal10/URLCaching/blob/master/URLCaching/ViewController.m";
     NSURL *url = [NSURL URLWithString:urlStr];
 //    NSURLRequest *request = [NSURLRequest requestWithURL:url ];
     NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestReturnCacheDataElseLoad timeoutInterval:0];

@@ -30,7 +30,8 @@
     self.startTime.text = @"0";
     self.endTime.text = @"0";
     self.timeTaken.text = @"X";
-    NSString *urlStr = @"https://www.amazon.com";
+    self.contentLength.text = @"0";
+    NSString *urlStr = @"http://github.com/rs/SDURLCache/blob/master/SDURLCache.m";
     NSURL *url = [NSURL URLWithString:urlStr];
 //    NSURLRequest *request = [NSURLRequest requestWithURL:url ];
     NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestReturnCacheDataElseLoad timeoutInterval:0];
@@ -47,6 +48,7 @@
                                           double d = (double)endMillis - (double)startMillis;
                                           NSString *s = [NSString stringWithFormat:@"%lf",d ];
                                           self.timeTaken.text = s;
+                                          self.contentLength.text = [NSString stringWithFormat:@"%ld",[data length]];
                                       });
                                       
                                       

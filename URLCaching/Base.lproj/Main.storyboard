@@ -59,15 +59,27 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZo-Rl-ejw">
+                                <rect key="frame" x="48" y="300" width="279" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="C68-H5-jXW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="D2f-rG-NOw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="32" id="EnN-AQ-qlv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="FKf-9n-x81" secondAttribute="trailing" constant="32" id="PZF-Gi-S3u"/>
+                            <constraint firstItem="ZZo-Rl-ejw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="32" id="R55-v2-SSV"/>
                             <constraint firstItem="ydX-5R-DFJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="32" id="SP9-eG-BQP"/>
+                            <constraint firstItem="ZZo-Rl-ejw" firstAttribute="top" secondItem="FKf-9n-x81" secondAttribute="bottom" constant="32" id="Y1K-Rw-sna"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ydX-5R-DFJ" secondAttribute="trailing" constant="32" id="aey-Qr-y9N"/>
                             <constraint firstItem="FKf-9n-x81" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="32" id="bFg-2N-E5G"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Eq7-7w-PHk" secondAttribute="trailing" constant="32" id="eyC-Sb-qwu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZZo-Rl-ejw" secondAttribute="trailing" constant="32" id="fgc-Lz-hnY"/>
                             <constraint firstAttribute="trailingMargin" secondItem="D2f-rG-NOw" secondAttribute="trailing" constant="32" id="jhm-bS-XE0"/>
                             <constraint firstItem="Eq7-7w-PHk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="32" id="jla-04-0tI"/>
                             <constraint firstItem="FKf-9n-x81" firstAttribute="top" secondItem="ydX-5R-DFJ" secondAttribute="bottom" constant="32" id="pDY-VQ-sKu"/>
@@ -77,6 +89,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="contentLength" destination="ZZo-Rl-ejw" id="tlg-SU-MoP"/>
                         <outlet property="endTime" destination="ydX-5R-DFJ" id="wJq-rP-tB2"/>
                         <outlet property="startTime" destination="D2f-rG-NOw" id="9py-47-NSH"/>
                         <outlet property="timeTaken" destination="FKf-9n-x81" id="GXI-xy-Zou"/>

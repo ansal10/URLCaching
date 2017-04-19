@@ -14,6 +14,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *startTime;
 @property (strong, nonatomic) IBOutlet UILabel *endTime;
 @property (strong, nonatomic) IBOutlet UILabel *timeTaken;
+@property (strong, nonatomic) IBOutlet UILabel *contentLength;
 
 @end
 
